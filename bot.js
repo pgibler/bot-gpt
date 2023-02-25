@@ -73,5 +73,5 @@ async function registerCommands(guild) {
   const commandManager = guild.commands;
   const command = await commandManager.create(commandData);
 
-  console.log(`Registered slash command: ${command.name}`);
+  console.log(`Guild: ${guild.name} - Registered slash command: ${command.name}. `);
 }
